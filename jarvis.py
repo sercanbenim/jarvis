@@ -75,8 +75,8 @@ def sendEmail(to, content):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login('akural78@gmail.com', 'angeluss')
-        server.sendmail('akural78@gmail.com', to, content)
+        server.login('', '')
+        server.sendmail('', to, content)
         server.close()
 
 
@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 speak("what should i remember?")
                 data = takeCommand()
                 speak("you told me to remember"+data)
-                remember = open('data.txt', 'w')
+                remember = open('data.txt', 'a')
                 remember.write(data)
                 remember.close()
         
