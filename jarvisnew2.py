@@ -74,8 +74,8 @@ def sendEmail(to, content):
     server.ehlo()
     server.starttls()
     # Enable low security in gmail 
-    server.login('akural78@gmail.com', 'angeluss')
-    server.sendmail('srcnbnm@gmail.com', to, content)
+    server.login('', '')
+    server.sendmail('', to, content)
     server.close()
 def screenshot():
     name_img = tt.time()
